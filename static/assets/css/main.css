@@ -235,8 +235,11 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 32px;
+  /* max-height: 32px; */
+  max-height: 80px;
+  /* margin-right: 8px; */
   margin-right: 8px;
+  width: auto;
 }
 
 .header .logo h1 {
@@ -508,7 +511,8 @@ h6 {
 }
 
 .footer .footer-about .logo img {
-  max-height: 40px;
+  /* max-height: 40px; */
+  max-height: 80px;
   margin-right: 6px;
 }
 
