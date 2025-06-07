@@ -2,8 +2,10 @@ services:
   - type: web
     name: expardec-landing
     env: python
-    buildCommand: "pip install -r requirements.txt && python manage.py collectstatic --noinput --clear"
-    startCommand: "gunicorn expardec.wsgi:application"
+    buildCommand: |
+      pip install -r requirements.txt
+      python manage.py collectstatic --noinput --clear
+    startCommand: gunicorn expardec.wsgi:application
     envVars:
       - key: DEBUG
         value: "False"
