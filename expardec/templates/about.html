@@ -5,7 +5,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>About - AgriCulture Bootstrap Template</title>
+  <title>About - Expardec</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -42,7 +42,8 @@
   <header id="header" class="header d-flex align-items-center position-relative">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
+      <!-- <a href="index.html" class="logo d-flex align-items-center"> -->
+      <a href="{% url 'index' %}" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="{% static 'assets/img/logo.png' %}" alt="AgriCulture">
         <!-- <h1 class="sitename">AgriCulture</h1>  -->
@@ -73,7 +74,8 @@
         <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.</p>
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="index.html">Home</a></li>
+            <!-- <li><a href="index.html">Home</a></li> -->
+            <li><a href="{% url 'index' %}">Home</a></li>
             <li class="current">About</li>
           </ol>
         </nav>
@@ -415,14 +417,15 @@
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-4 col-md-6 footer-about">
-            <a href="index.html" class="logo d-flex align-items-center">
-              <span class="sitename">AgriCulture</span>
+            <!-- <a href="index.html" class="logo d-flex align-items-center"> -->
+            <a href="{% url 'index' %}" class="logo d-flex align-items-center">
+              <span class="sitename">Expardec</span>
             </a>
             <div class="footer-contact pt-3">
-              <p>A108 Adam Street</p>
-              <p>New York, NY 535022</p>
-              <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-              <p><strong>Email:</strong> <span>info@example.com</span></p>
+              <p>A0000 A001 Street</p>
+              <p>Ecuador</p>
+              <p class="mt-3"><strong>Phone:</strong> <span>+A BCDE HIJKL MN</span></p>
+              <p><strong>Email:</strong> <span>aaaa@example.com</span></p>
             </div>
           </div>
 
