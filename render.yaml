@@ -2,20 +2,18 @@ services:
   - type: web
     name: expardec-landing
     env: python
-    buildCommand: |
-      pip install -r requirements.txt
-      python manage.py collectstatic --noinput --clear
+    buildCommand: pip install -r requirements.txt && python manage.py collectstatic --noinput --clear
     startCommand: gunicorn expardec.wsgi:application
     envVars:
       - key: DEBUG
-        value: False
+        value: "False"
       - key: SECRET_KEY
         generateValue: true
       - key: SECURE_SSL_REDIRECT
-        value: True
+        value: "True"
       - key: SECURE_HSTS_SECONDS
-        value: 31536000
+        value: "31536000"
       - key: SECURE_HSTS_INCLUDE_SUBDOMAINS
-        value: True
+        value: "True"
       - key: SECURE_HSTS_PRELOAD
-        value: True
+        value: "True"

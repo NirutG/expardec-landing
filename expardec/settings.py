@@ -25,7 +25,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY', default='django-insecure-your-default-key-change-this')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True
 DEBUG = config('DEBUG', default=False, cast=bool)
 
 ALLOWED_HOSTS = [
@@ -65,7 +64,6 @@ ROOT_URLCONF = 'expardec.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        # 'DIRS': [Path.joinpath(BASE_DIR, 'expardec/templates')],
         'DIRS': [BASE_DIR / 'expardec' / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -127,19 +125,17 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
-# STATIC_URL = 'static/'
-# STATICFILES_DIRS = [Path.joinpath(BASE_DIR, 'static')]
-# STATIC_ROOT = Path.joinpath(BASE_DIR, 'staticfiles')
-
-# Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
-# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+# Use os.path.join to ensure compatibility
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# Directory where you store your static files during development
 STATICFILES_DIRS = [
-    BASE_DIR / 'static',
+    os.path.join(BASE_DIR, 'static'),
 ]
 
-# Whitenoise configuration for static files
+# Whitenoise configuration
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Default primary key field type
