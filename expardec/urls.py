@@ -28,6 +28,14 @@ urlpatterns = [
     path('services/', views.services, name='services'),
 ]
 
-# Serve static files in development
+# # Serve static files in development
+# if settings.DEBUG:
+#     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+# Serve static files in both development and production
+# Note: Whitenoise will handle this in production, but this ensures compatibility
 if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+else:
+    # In production, also add static files handling for any edge cases
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
