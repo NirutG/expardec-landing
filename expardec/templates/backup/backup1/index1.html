@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expardec</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+        
+        .message {
+            font-size: 5rem; /* Changed from 2.5rem to 5rem (2x bigger) */
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: bold; /* Added bold for better visibility */
+        }
+        
+        .logo {
+            max-width: 200px;
+            height: auto;
+        }
+        
+        @media (max-width: 768px) {
+            .message {
+                font-size: 3.6rem; /* Changed from 1.8rem to 3.6rem (2x bigger) */
+            }
+            .logo {
+                max-width: 150px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .message {
+                font-size: 2.5rem; /* Adjusted for very small screens */
+                padding: 0 20px; /* Added padding for better spacing */
+            }
+            .logo {
+                max-width: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="message">Website is under construction!</div>
+    <img src="{% static 'assets/img/logo.png' %}" alt="Expardec Logo" class="logo">
+</body>
+</html>

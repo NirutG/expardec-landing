@@ -25,8 +25,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
     path('about/', views.about, name='about'),
-    path('services/', views.services, name='services'),
     path('contact/', views.contact, name='contact'),
+    path('index_es/', views.index_es, name='index_es'),
+    path('about_es/', views.about_es, name='about_es'),
+    path('contact_es/', views.contact_es, name='contact_es'),
 ]
 
 # # Serve static files in development

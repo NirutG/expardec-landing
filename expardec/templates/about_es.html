@@ -1,0 +1,147 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Acerca de Nosotros - Expardec</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Marcellus:wght@400&display=swap" rel="stylesheet">
+
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+
+  <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+
+</head>
+
+<body class="about-page">
+
+  <header id="header" class="header d-flex align-items-center position-relative">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="{% url 'index_es' %}" class="logo d-flex align-items-center">
+        <img src="{% static 'assets/img/logo.png' %}" alt="Expardec">
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="{% url 'index_es' %}" class="active">Inicio</a></li>
+          <li><a href="{% url 'about_es' %}">Acerca de Nosotros</a></li>
+          <li><a href="{% url 'contact_es' %}">Contacto</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+      <div class="language-switcher" style="margin-left: 3cm;">
+        <button class="btn btn-outline-success btn-sm me-2" onclick="window.location.href='/about'" style="min-width: 90px; font-size: 14px; border-radius: 15px;">
+          ENGLISH
+        </button>
+        <button class="btn btn-success btn-sm" onclick="window.location.href='/about_es/'" style="min-width: 90px; font-size: 14px; border-radius: 15px;">
+          ESPAÑOL
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/page-title-bg.webp);">
+      <div class="container position-relative">
+        <h1>Acerca de Nosotros</h1>        
+      </div>
+    </div>
+
+    <section id="about-3" class="about-3 section">
+
+      <div class="container">
+        <div style="text-align: center">
+          <p>
+            <strong>EXPARDEC</strong> es una empresa social con sede en el sur de Ecuador que busca transformar la acuicultura de camarón en una práctica más justa, ecológica y centrada en las personas. Nuestro nombre representa <strong>Expanding partnerships for dignity, ecological balance, and circular economy</strong> (en español: <em>“Expandiendo alianzas por la dignidad, el equilibrio ecológico y la economía circular”</em>). 
+          </p>
+          <p>
+            Nuestro objetivo es construir un modelo que <strong>empodere a los productores artesanales, proteja los ecosistemas de manglar</strong>, y <strong>promueva una economía azul más justa y resiliente</strong>.
+          </p>
+          <p>
+            En EXPARDEC creemos que el futuro de la acuicultura no se trata de producir más, sino de producir mejor. A través del <strong>comercio justo, la agregación de valor</strong>, y <strong>fortalecimiento de capacidades</strong>, buscamos posicionar la acuicultura artesanal como una <strong>alternativa premium y sostenible</strong>.
+          </p>
+          <p>
+            Nuestra meta es promover un sistema que evite la sobresaturación, apoye la estabilidad de precios y proteja tanto los <strong>medios de vida como los ecosistemas costeros</strong>.
+          </p>
+          <p>
+            No estamos aquí para competir por volumen, estamos aquí para crecer con <strong>propósito, dignidad e impacto</strong>.
+          </p>
+      </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6 footer-about">
+            <a href="{% url 'index_es' %}" class="logo d-flex align-items-center">
+              <span class="sitename">EXPARDEC</span>
+            </a>
+            <div class="footer-contact pt-3">
+              <p>Puerto Jeli, El Oro</p>
+              <p>Ecuador</p>
+              <p><strong>Correo electrónico:</strong> <span>ecuadorexpardec21@gmail.com</span></p>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Enlaces útiles</h4>
+            <ul>
+              <li><a href="{% url 'index_es' %}" class="active">Inicio</a></li>
+              <li><a href="{% url 'contact_es' %}">Contacto</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <div style="text-align: center">
+      <p>
+        © Copyright <strong><span>EXPARDEC</span></strong> All Rights Reserved
+      </p>
+      <p>
+        Desarrollado por NirutG
+      </p>
+      <br>
+    </div>
+
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
