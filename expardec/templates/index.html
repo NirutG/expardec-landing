@@ -39,6 +39,7 @@
         <ul>
           <li><a href="{% url 'index' %}" class="active">Home</a></li>
           <li><a href="{% url 'about' %}">About Us</a></li>
+          <li><a href="{% url 'partnerships' %}">Partnerships</a></li>
           <li><a href="{% url 'contact' %}">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -247,8 +248,18 @@
       <div class="content">
         <div class="container">
           <div class="row">
-            <div class="col-lg-6 mb-4 mb-lg-0">
-              <img src="{% static 'assets/img/img_long_5.jpg' %}" alt="Image " class="img-fluid img-overlap" data-aos="zoom-out">
+            <div class="col-lg-6 mb-4 mb-lg-0" style="margin-top: 90px;">
+              <video class="img-fluid rounded shadow"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
+                  data-aos="zoom-out">
+
+                <source src="{% static 'assets/video/shrimp.mp4' %}" type="video/mp4">
+
+                  Your browser does not support HTML5 video.
+              </video>
             </div>
             <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
               <h3 class="content-subtitle text-white opacity-50">What Makes Us Different</h3>
@@ -482,6 +493,7 @@
             <h4>Useful Links</h4>
             <ul>
               <li><a href="{% url 'about' %}">About Us</a></li>
+              <li><a href="{% url 'partnerships' %}">Partnerships</a></li>
               <li><a href="{% url 'contact' %}">Contact</a></li>
             </ul>
           </div>

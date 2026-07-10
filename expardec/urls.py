@@ -25,9 +25,13 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
     path('about/', views.about, name='about'),
+    path('partnerships/', views.partnerships, name='partnerships'),
+    path('news_asocam/', views.news_asocam, name='news_asocam'),
     path('contact/', views.contact, name='contact'),
     path('index_es/', views.index_es, name='index_es'),
     path('about_es/', views.about_es, name='about_es'),
+    path('partnerships_es/', views.partnerships_es, name='partnerships_es'),
+    path('news_asocam_es/', views.news_asocam_es, name='news_asocam_es'),
     path('contact_es/', views.contact_es, name='contact_es'),
 ]
 

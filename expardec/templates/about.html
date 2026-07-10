@@ -24,6 +24,15 @@
 
   <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
 
+  <style>
+  .about-text {
+    font-size: 24px;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 24px;
+    color: #333;
+  }
+  </style>
 </head>
 
 <body class="about-page">
@@ -39,6 +48,7 @@
         <ul>
           <li><a href="{% url 'index' %}">Home</a></li>
           <li><a href="{% url 'about' %}">About Us</a></li>
+          <li><a href="{% url 'partnerships' %}">Partnerships</a></li>
           <li><a href="{% url 'contact' %}">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -62,27 +72,75 @@
         <h1>About Us</h1>        
       </div>
     </div>
-
-    <section id="about-3" class="about-3 section">
-
-      <div class="container">
-        <div style="text-align: center">
-          <p>
-            <strong>EXPARDEC</strong> is a social enterprise based in southern Ecuador that seeks to transform shrimp aquaculture into a more just, ecological, and human-centered practice. Our name stands for <strong>Expanding partnerships for dignity, ecological balance, and circular economy</strong>. 
-          </p>
-          <p>
-            We aim to build a model that <strong>empowers artisanal farmers, protects mangrove ecosystems</strong>, and <strong>promotes a fairer and more resilient blue economy</strong>.
-          </p>
-          <p>
-            At EXPARDEC, we believe the future of aquaculture is not about producing more, but about producing better. Through <strong>fair trade, value addition</strong>, and <strong>capacity building</strong>, we strive to elevate artisanal aquaculture as a <strong>premium and sustainable alternative</strong>.
-          </p>
-          <p>
-            Our goal is to promote a system that avoids oversaturation, supports price stability, and protects both <strong>livelihoods and coastal ecosystems</strong>.
-          </p>
-          <p>
-            We are not here to compete for volume, we’re here to grow with <strong>purpose, dignity, and impact</strong>.
-          </p>
-      </div>
+    
+    <section id="about-3" class="section" style="background-color: #fbfbfc; padding: 80px 0;">
+      <div class="container-fluid px-0">
+        <div class="row justify-content-center mx-0">
+          <div class="col-8">
+            <article class="bg-white p-5 shadow-sm rounded-3"
+                    style="
+                                font-size:22px;
+                                line-height:1.9;
+                                color:#333333;
+                            ">
+              <p class="about-text">
+                Building a more sustainable future for shrimp aquaculture requires more than innovation 
+                alone. It requires partnerships, shared purpose, and a commitment to creating value for 
+                both people and nature.
+              </p>
+              <p class="about-text">
+                EXPARDEC is a mission-driven social enterprise based in southern Ecuador. Our name stands for 
+                <strong>Expanding Partnerships for Dignity, Ecological Balance, and Circular Economy</strong>, 
+                reflecting our belief that meaningful and lasting change is achieved by connecting people, 
+                knowledge, innovation, and opportunities across the shrimp value chain.
+              </p>
+              <p class="about-text">
+                We seek to transform shrimp aquaculture into a more just, ecological, and human-centered 
+                practice.
+              </p>
+              <p class="about-text">
+                We aim to build a model that <strong>empowers artisanal farmers, protects mangrove ecosystems, 
+                  and promotes a fairer and more resilient blue economy.</strong>
+              </p>
+              <p class="about-text">
+                At EXPARDEC, we believe the future of aquaculture is not about producing more, but about 
+                producing better. Through <strong>fair trade, value addition, innovation, strategic partnerships</strong>
+                , and <strong>capacity building</strong> , we strive to elevate artisanal aquaculture as a premium 
+                and sustainable alternative.
+              <p class="about-text">
+                We believe that <strong>true sustainability can only be achieved when environmental stewardship, 
+                  social well-being, and economic viability advance together.</strong> Progress in one, or even two, 
+                  of these dimensions should never come at the expense of the others.
+              </p>
+              <p class="about-text">
+                Our goal is to contribute to a shrimp sector where growth is driven by <strong>
+                  quality, sustainability, innovation, and collaboration,</strong> , creating long-term value for 
+                  producers, workers, businesses, coastal communities, and the ecosystems upon which they depend.
+              </p>
+              <p class="about-text">
+                We are not here to compete for volume. We are here to grow with <strong>
+                  purpose, dignity, and impact.
+                </strong>
+              </p>
+              <br><br>
+              <p class="about-text">
+                <em>
+                  "The values that inspire our work were shaped long before EXPARDEC existed."
+                </em>
+              </p>
+              <p class="about-text">
+                <em>
+                  "No matter how righteous a person strives to be, they will often be tempted to 
+                  compromise their principles in the face of a misguided world. But it is our duty to 
+                  stand firm in our convictions, as true character is revealed through adversity."
+                </em>
+              </p>
+              <p class="about-text">
+                <strong>— Plutarco L. Pardo G. (1966–2002)</strong>
+              </p>
+            </article>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -108,6 +166,7 @@
             <h4>Useful Links</h4>
             <ul>
               <li><a href="{% url 'index' %}" class="active">Home</a></li>
+              <li><a href="{% url 'partnerships' %}">Partnerships</a></li>
               <li><a href="{% url 'contact' %}">Contact</a></li>
             </ul>
           </div>

@@ -1,0 +1,319 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Noticias - EXPARDEC y ASOCAM</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Marcellus:wght@400&display=swap" rel="stylesheet">
+
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+
+  <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+
+
+  <style>
+  .news-text {
+    font-size: 24px;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 24px;
+    color: #333;
+  }
+  .news-text-center {
+    font-size: 24px;
+    line-height: 1.8;
+    text-align: center;
+    margin-bottom: 24px;
+    color: #333;
+  }
+  </style>
+
+</head>
+
+<body class="about-page">
+
+  <header id="header" class="header d-flex align-items-center position-relative">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="{% url 'index_es' %}" class="logo d-flex align-items-center">
+        <img src="{% static 'assets/img/logo.png' %}" alt="Expardec">
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="{% url 'index_es' %}" class="active">Inicio</a></li>
+          <li><a href="{% url 'about_es' %}">Acerca de Nosotros</a></li>
+          <li><a href="{% url 'partnerships_es' %}">Alianzas</a></li>
+          <li><a href="{% url 'contact_es' %}">Contacto</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+      <div class="language-switcher" style="margin-left: 3cm;">
+        <button class="btn btn-outline-success btn-sm me-2" onclick="window.location.href='/news_asocam'" style="min-width: 90px; font-size: 14px; border-radius: 15px;">
+          ENGLISH
+        </button>
+        <button class="btn btn-success btn-sm" onclick="window.location.href='/news_asocam_es/'" style="min-width: 90px; font-size: 14px; border-radius: 15px;">
+          ESPAÑOL
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    {% static 'assets/img/page-title-bg.webp' as page_title_bg %}
+    <!-- <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/page-title-bg.webp);"> -->
+    <div class="page-title dark-background" 
+         data-aos="fade"
+         style="background-image: url('{{ page_title_bg }}');">
+      <div class="container position-relative">
+        <h1>EXPARDEC y ASOCAM firman un Memorando de Entendimiento para impulsar una camaronicultura sostenible asociada a ecosistemas de manglar</h1>        
+      </div>
+    </div>
+
+    <!-- <section id="news" class="section" style="background-color: #fbfbfc; padding: 80px 0;"> -->
+    <section id="news" class="section" style="background-color: #f6f8f7; padding: 80px 0;">
+      <!-- <div class="container"> -->
+      <div class="container-fluid px-0">
+      <!-- <div class="container-xl"> -->
+
+        <div class="row gy-4 justify-content-center">
+          
+          <div class="col-lg-4 col-md-6">
+          </div>
+          
+          <!-- <div class="row justify-content-center">
+            <div class="col-lg-8"> -->
+          <div class="row justify-content-center mx-0">
+            <div class="col-8">
+
+              <!-- <article class="bg-white p-4 p-md-5 shadow-sm rounded-3"> -->
+              <article class="bg-white p-5 shadow-sm rounded-3"
+                      style="
+                          font-size:22px;
+                          line-height:1.9;
+                          color:#333333;
+                      ">
+
+               
+                <img src="{% static 'assets/img/news-1_1.jpg' %}"
+                    class="img-fluid rounded mb-4"
+                    alt="EXPARDEC and ASOCAM"
+                    style="width:70%; display:block; margin:auto; margin-bottom:80px;">
+
+                <p class="news-text text-muted" style="margin-top:50px; margin-bottom:40px;">
+                  Puerto Hualtaco, El Oro, Ecuador – 6 Julio 2026
+                </p>
+
+                <p class="news-text">
+                  <strong>Todo cambio significativo comienza con un primer paso.</strong>
+                </p>
+
+                <p class="news-text">
+                  Los desafíos que enfrenta hoy la camaronicultura, desde las presiones ambientales 
+                  y el cambio climático hasta la incertidumbre de los mercados y la necesidad de fortalecer 
+                  los medios de vida de las comunidades costeras, no pueden resolverse mediante un solo 
+                  proyecto ni por una sola organización. Construir un futuro más sostenible requiere 
+                  colaboración, confianza, innovación y el compromiso compartido de todas las personas 
+                  e instituciones que forman parte de la cadena de valor del camarón.
+                </p>
+
+                <p class="news-text">
+                  Con esa visión, <strong>EXPARDEC</strong> y la <strong>Asociación de Productores 
+                    Camaroneros Fronterizos (ASOCAM)</strong> han firmado un <strong>Memorando de Entendimiento (MdE)</strong>
+                    , estableciendo un marco de colaboración a largo plazo para promover el desarrollo sostenible, la innovación, 
+                    el intercambio de conocimientos, el fortalecimiento de capacidades y la generación de alianzas estratégicas 
+                    que contribuyan al fortalecimiento de la camaronicultura asociada a ecosistemas de manglar en el Ecuador. 
+                </p>
+
+                <p class="news-text">
+                  ASOCAM es una organización de derecho privado, sin fines de lucro y legalmente constituida que representa 
+                  aproximadamente a <strong>137 productores camaroneros</strong> de Puerto Hualtaco y su zona de influencia. 
+                  En conjunto, sus asociados manejan alrededor de <strong>2.600 hectáreas</strong> de producción camaronera 
+                  desarrolladas principalmente bajo sistemas tradicionales asociados a ecosistemas de manglar. 
+                </p>
+
+                <p class="news-text">
+                  A través de este Memorando, ambas organizaciones establecen una plataforma para desarrollar futuras iniciativas 
+                  relacionadas con:
+                </p>
+
+                <ul class="news-text">
+                  <li>Fortalecimiento de capacidades e intercambio de conocimientos para productores camaroneros y otros actores 
+                    vinculados a los recursos costeros;</li>
+                  <li>Acuicultura sostenible y conservación ambiental;</li>
+                  <li>Innovación y transformación digital;</li>
+                  <li>Desarrollo de iniciativas piloto que generen soluciones prácticas;</li>
+                  <li>Formulación conjunta de propuestas para fondos, premios y programas 
+                    nacionales e internacionales; y </li>
+                  <li>Alianzas con universidades, instituciones públicas, empresas privadas, 
+                    organizaciones no gubernamentales y organismos internacionales comprometidos 
+                    con una camaronicultura más sostenible.</li>
+                </ul>
+
+                <p class="news-text">
+                  El Memorando <strong>no implica compromisos económicos ni la ejecución inmediata de proyectos 
+                    específicos.</strong> Su propósito es establecer un marco de cooperación que permita 
+                    desarrollar iniciativas conjuntas cuando existan oportunidades alineadas con los 
+                    objetivos compartidos por ambas organizaciones. 
+                </p>
+
+                <p class="news-text">
+                  En EXPARDEC creemos que una camaronicultura verdaderamente sostenible requiere fortalecer 
+                  toda la cadena de valor y no únicamente la producción. También creemos que la sostenibilidad 
+                  solo puede considerarse realmente sostenible cuando mantiene un equilibrio entre sus
+                   <strong>tres dimensiones inseparables: la conservación ambiental, el bienestar social 
+                    y la viabilidad económica.</strong> El progreso en una o incluso dos de estas dimensiones 
+                    nunca debería alcanzarse a costa de las demás.
+                </p>
+
+                <p class="news-text">
+                  Productores, trabajadores, procesadoras, exportadores, investigadores, proveedores de 
+                  tecnología, instituciones financieras, gobiernos, consumidores y aliados para el 
+                  desarrollo tienen un papel fundamental en la construcción de un sector camaronero 
+                  resiliente, inclusivo y capaz de generar valor a largo plazo tanto para las personas 
+                  como para la naturaleza.
+                </p>
+
+                <p class="news-text">
+                  Para muchos pequeños y medianos productores, el acceso al conocimiento, la tecnología, 
+                  las alianzas estratégicas, el financiamiento y los mercados continúa siendo un desafío 
+                  importante. Creemos que generar oportunidades en estos ámbitos es tan importante como 
+                  desarrollar nuevas tecnologías. La sostenibilidad no depende únicamente de producir 
+                  camarón de manera responsable, sino también de asegurar que quienes hacen posible esta 
+                  actividad tengan oportunidades para innovar, adaptarse y prosperar.
+                </p>
+
+                <p class="news-text">
+                  EXPARDEC nació de una convicción sencilla: los cambios más importantes ocurren cuando 
+                  personas e instituciones que comparten un mismo propósito encuentran la oportunidad de 
+                  trabajar juntas. Aspiramos a conectar a los productores con el conocimiento, 
+                  la innovación con las necesidades reales del sector, los desafíos locales con 
+                  oportunidades globales y la sostenibilidad con el desarrollo económico.
+                </p>
+
+                <p class="news-text">
+                  Aunque este Memorando nace en Ecuador, muchos de los desafíos que enfrenta hoy la 
+                  camaronicultura son compartidos por países productores alrededor del mundo. Esperamos 
+                  que las alianzas, experiencias y soluciones que se construyan conjuntamente puedan 
+                  contribuir no solo al fortalecimiento del sector camaronero ecuatoriano, sino también 
+                  inspirar nuevas formas de colaboración allí donde las comunidades trabajan por un futuro 
+                  más sostenible para la acuicultura.
+                </p>
+
+                <p class="news-text">
+                  Sabemos que las transformaciones verdaderamente importantes no ocurren de la noche a la 
+                  mañana. Se construyen mediante relaciones de confianza, aprendizaje continuo, 
+                  responsabilidad compartida y muchos pequeños pasos dados con constancia.
+                </p>
+
+                <p class="news-text">
+                  <strong>Este Memorando no representa la meta final. Representa un paso más hacia la visión 
+                    que inspira a EXPARDEC desde sus inicios: contribuir a una camaronicultura donde la conservación 
+                    ambiental, la inclusión social y la prosperidad económica se fortalezcan mutuamente, 
+                    generando oportunidades no solo para los productores, sino también para los trabajadores, 
+                    las familias, las empresas, los investigadores, las comunidades costeras y las futuras generaciones.
+                  </strong>
+                </p>
+
+                <p class="news-text">
+                  Agradecemos sinceramente a ASOCAM por la confianza depositada en EXPARDEC y por decidir 
+                  dar este paso junto a nosotros. Esperamos aprender, crecer y transformar ideas compartidas 
+                  en acciones que generen un impacto positivo y duradero para las personas, la naturaleza y 
+                  el futuro de la camaronicultura.
+                </p>
+
+                <div class="mt-4">
+                  <a href="{% url 'partnerships_es' %}" class="btn btn-success rounded-pill px-4">
+                    Regresar a Alianzas
+                  </a>
+                </div>
+
+              </article>
+
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+          </div>
+
+        </div>
+        
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6 footer-about">
+            <a href="{% url 'index' %}" class="logo d-flex align-items-center">
+              <span class="sitename">EXPARDEC</span>
+            </a>
+            <div class="footer-contact pt-3">
+              <p>Puerto Jeli, El Oro</p>
+              <p>Ecuador</p>
+              <p><strong>Email:</strong> <span>ecuadorexpardec21@gmail.com</span></p>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Enlaces útiles</h4>
+            <ul>
+              <li><a href="{% url 'index_es' %}" class="active">Inicio</a></li>
+              <li><a href="{% url 'about_es' %}">Acerca de Nosotros</a></li>
+              <li><a href="{% url 'contact_es' %}">Contacto</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <div style="text-align: center">
+      <p>
+        © Copyright <strong><span>EXPARDEC</span></strong> All Rights Reserved
+      </p>
+      <p>
+        Desarrollado por NirutG
+      </p>
+      <br>
+    </div>
+
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>

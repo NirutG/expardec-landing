@@ -25,7 +25,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY', default='django-insecure-your-default-key-change-this')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG', default=False, cast=bool)
+# DEBUG = config('DEBUG', default=False, cast=bool) # This is for production
+DEBUG = True # This is for development
 
 ALLOWED_HOSTS = [
     'localhost',
@@ -128,11 +129,13 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # Use os.path.join to ensure compatibility
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') # This is for production
+STATIC_ROOT = BASE_DIR / "staticfiles" # This is for development
 
 # Directory where you store your static files during development
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
+    # os.path.join(BASE_DIR, 'static'), # This is for production
+    BASE_DIR / "static", # This is for development
 ]
 
 # Whitenoise configuration

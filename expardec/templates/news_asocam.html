@@ -1,0 +1,295 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>News - EXPARDEC and ASOCAM</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Marcellus:wght@400&display=swap" rel="stylesheet">
+
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+
+  <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+
+
+  <style>
+  .news-text {
+    font-size: 24px;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 24px;
+    color: #333;
+  }
+  .news-text-center {
+    font-size: 24px;
+    line-height: 1.8;
+    text-align: center;
+    margin-bottom: 24px;
+    color: #333;
+  }
+  </style>
+
+</head>
+
+<body class="about-page">
+
+  <header id="header" class="header d-flex align-items-center position-relative">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="{% url 'index' %}" class="logo d-flex align-items-center">
+        <img src="{% static 'assets/img/logo.png' %}" alt="Expardec">
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="{% url 'index' %}">Home</a></li>
+          <li><a href="{% url 'about' %}">About Us</a></li>
+          <li><a href="{% url 'partnerships' %}">Partnerships</a></li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+      <div class="language-switcher" style="margin-left: 3cm;">
+        <button class="btn btn-success btn-sm me-2" onclick="window.location.href='/news_asocam'" style="min-width: 90px; font-size: 14px; border-radius: 15px;">
+          ENGLISH
+        </button>
+        <button class="btn btn-outline-success btn-sm" onclick="window.location.href='/news_asocam_es/'" style="min-width: 90px; font-size: 14px; border-radius: 15px;">
+          ESPAÑOL
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/page-title-bg.webp);"> -->
+    {% static 'assets/img/page-title-bg.webp' as page_title_bg %}
+    <div class="page-title dark-background" 
+         data-aos="fade"
+         style="background-image: url('{{ page_title_bg }}');">
+      <div class="container position-relative">
+        <h1>EXPARDEC and ASOCAM Sign Memorandum of Understanding to Advance Sustainable Mangrove-Associated Shrimp Farming</h1>        
+      </div>
+    </div>
+    
+    <section id="news" class="section" style="background-color: #f6f8f7; padding: 80px 0;">
+      <!-- <div class="container"> -->
+      <div class="container-fluid px-0">
+      <!-- <div class="container-xl"> -->
+
+        <div class="row gy-4 justify-content-center">
+          
+          <div class="col-lg-4 col-md-6">
+          </div>
+          
+          <!-- <div class="row justify-content-center">
+            <div class="col-lg-8"> -->
+          <div class="row justify-content-center mx-0">
+            <div class="col-8">
+
+              <!-- <article class="bg-white p-4 p-md-5 shadow-sm rounded-3"> -->
+              <article class="bg-white p-5 shadow-sm rounded-3"
+                      style="
+                          font-size:22px;
+                          line-height:1.9;
+                          color:#333333;
+                      ">
+               
+                <img src="{% static 'assets/img/news-1_1.jpg' %}"
+                    class="img-fluid rounded mb-4"
+                    alt="EXPARDEC and ASOCAM"
+                    style="width:70%; display:block; margin:auto; margin-bottom:80px;">
+
+                <p class="news-text text-muted" style="margin-top:50px; margin-bottom:40px;">
+                  Puerto Hualtaco, El Oro, Ecuador – 6 July 2026
+                </p>
+
+                <p class="news-text">
+                  <strong>
+                    Every meaningful transformation begins with a first step.                    
+                  </strong>
+                </p>
+
+                <p class="news-text">
+                  The challenges facing shrimp farming today, from environmental pressures and climate change to market uncertainty
+                   and the need to strengthen coastal livelihoods, cannot be solved by a single project or a single organization.
+                    Building a more sustainable future requires collaboration, trust, innovation, and a shared commitment from everyone
+                     connected to the shrimp value chain.
+                </p>
+
+                <p class="news-text">
+                  It is with this vision that <strong>EXPARDEC </strong> and the <strong>Association of Border Shrimp Farmers (ASOCAM)</strong>
+                  have signed a <strong>Memorandum of Understanding (MoU)</strong>, establishing a framework for long-term collaboration to promote
+                   sustainable development, innovation, knowledge exchange, capacity building, and strategic partnerships that contribute to 
+                   strengthening Ecuador's mangrove-associated shrimp farming sector.
+                </p>
+
+                <p class="news-text">
+                  ASOCAM is a legally established, non-profit producers' association representing approximately <strong>137 shrimp farmers</strong>
+                  in Puerto Hualtaco and its surrounding area. Together, its members manage nearly <strong>2,600 hectares</strong> of shrimp 
+                  production developed primarily under traditional farming systems associated with mangrove ecosystems.
+                </p>
+
+                <p class="news-text">Through this Memorandum, both organizations establish a platform to explore future initiatives including:</p>
+
+                <ul class="news-text">
+                  <li>Capacity building and knowledge exchange for shrimp farmers and other coastal resource users;</li>
+                  <li>Sustainable aquaculture and environmental conservation;</li>
+                  <li>Innovation and digital transformation;</li>
+                  <li>Pilot initiatives that generate practical solutions;</li>
+                  <li>Partnerships with universities, government agencies, private companies, 
+                    NGOs and international organizations working toward a more sustainable shrimp sector.</li>
+                </ul>
+
+                <p class="news-text">
+                  The Memorandum does <strong>not</strong> establish financial commitments or the immediate implementation
+                   of specific projects. Rather, it provides a collaborative framework through which future initiatives 
+                   may be jointly developed whenever opportunities align with the shared objectives of both organizations. 
+                </p>
+
+                <p class="news-text">
+                  At EXPARDEC, we believe that achieving truly sustainable shrimp farming requires strengthening every part 
+                  of the value chain, not only production itself. We also believe that sustainability can only be 
+                  considered truly sustainable when it balances its <strong>three inseparable dimensions: environmental stewardship, 
+                  social well-being, and economic viability.</strong> Progress in one or even two of these dimensions should never come 
+                  at the expense of the others.
+                </p>
+
+                <p class="news-text">
+                  Farmers, workers, processors, exporters, researchers, technology providers, financial institutions, governments, 
+                  consumers, and development partners all have a role to play in shaping a shrimp sector that is resilient, inclusive, 
+                  and capable of creating long-term value for both people and nature.
+                </p>
+
+                <p class="news-text">
+                  For many small and medium-scale producers, access to knowledge, technology, strategic partnerships, 
+                  financing, and markets remains a significant challenge. We believe that creating opportunities across 
+                  these areas is just as important as developing new technologies. Lasting sustainability depends not only 
+                  on producing shrimp responsibly, but also on ensuring that the people behind the industry have opportunities 
+                  to innovate, adapt, and prosper.
+                </p>
+
+                <p class="news-text">
+                  EXPARDEC was founded on a simple belief: meaningful change happens when people who share the same purpose have 
+                  the opportunity to work together. We aspire to connect producers with knowledge, innovation with practical realities, 
+                  local challenges with global opportunities, and sustainability with economic development.
+                </p>
+
+                <p class="news-text">
+                  Although this Memorandum begins in Ecuador, many of today's challenges are shared by shrimp-producing countries 
+                  around the world. We hope that the partnerships, experiences, and solutions developed together can contribute 
+                  not only to Ecuador's shrimp sector but also inspire collaboration wherever communities seek to build a more 
+                  sustainable future for aquaculture.
+                </p>
+
+                <p class="news-text">
+                  We know that meaningful change does not happen overnight. It is built through relationships, continuous learning, 
+                  shared responsibility, and many small steps taken consistently over time.
+                </p>
+
+                <p class="news-text">
+                  <strong>This Memorandum is not the destination. It is one more step toward the future we hope to help build, 
+                    a shrimp sector where environmental stewardship, social inclusion, and economic prosperity reinforce one another, 
+                    creating opportunities not only for producers, but also for workers, families, businesses, researchers, 
+                    coastal communities, and future generations.</strong>
+                </p>
+
+                <p class="news-text">
+                  We sincerely thank ASOCAM for its trust and for choosing to take this step alongside us. We look forward to 
+                  learning together, growing together, and transforming shared ideas into actions that create lasting value for people, 
+                  nature, and the future of shrimp farming.
+                </p>
+
+                <div class="mt-4">
+                  <a href="{% url 'partnerships' %}" class="btn btn-success rounded-pill px-4">
+                    Back to Partnerships
+                  </a>
+                </div>
+
+              </article>
+
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+          </div>
+
+        </div>
+        
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6 footer-about">
+            <a href="{% url 'index' %}" class="logo d-flex align-items-center">
+              <span class="sitename">EXPARDEC</span>
+            </a>
+            <div class="footer-contact pt-3">
+              <p>Puerto Jeli, El Oro</p>
+              <p>Ecuador</p>
+              <p><strong>Email:</strong> <span>ecuadorexpardec21@gmail.com</span></p>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="{% url 'index' %}" class="active">Home</a></li>
+              <li><a href="{% url 'about' %}">About Us</a></li>
+              <li><a href="{% url 'contact' %}">Contact</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <div style="text-align: center">
+      <p>
+        © Copyright <strong><span>EXPARDEC</span></strong> All Rights Reserved
+      </p>
+      <p>
+        Built by NirutG
+      </p>
+      <br>
+    </div>
+
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>

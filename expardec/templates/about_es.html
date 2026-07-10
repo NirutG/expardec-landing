@@ -24,6 +24,15 @@
 
   <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
 
+  <style>
+  .about-text {
+    font-size: 24px;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 24px;
+    color: #333;
+  }
+  </style>
 </head>
 
 <body class="about-page">
@@ -39,6 +48,7 @@
         <ul>
           <li><a href="{% url 'index_es' %}" class="active">Inicio</a></li>
           <li><a href="{% url 'about_es' %}">Acerca de Nosotros</a></li>
+          <li><a href="{% url 'partnerships_es' %}">Alianzas</a></li>
           <li><a href="{% url 'contact_es' %}">Contacto</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -63,26 +73,73 @@
       </div>
     </div>
 
-    <section id="about-3" class="about-3 section">
-
-      <div class="container">
-        <div style="text-align: center">
-          <p>
-            <strong>EXPARDEC</strong> es una empresa social con sede en el sur de Ecuador que busca transformar la acuicultura de camarón en una práctica más justa, ecológica y centrada en las personas. Nuestro nombre representa <strong>Expanding partnerships for dignity, ecological balance, and circular economy</strong> (en español: <em>“Expandiendo alianzas por la dignidad, el equilibrio ecológico y la economía circular”</em>). 
-          </p>
-          <p>
-            Nuestro objetivo es construir un modelo que <strong>empodere a los productores artesanales, proteja los ecosistemas de manglar</strong>, y <strong>promueva una economía azul más justa y resiliente</strong>.
-          </p>
-          <p>
-            En EXPARDEC creemos que el futuro de la acuicultura no se trata de producir más, sino de producir mejor. A través del <strong>comercio justo, la agregación de valor</strong>, y <strong>fortalecimiento de capacidades</strong>, buscamos posicionar la acuicultura artesanal como una <strong>alternativa premium y sostenible</strong>.
-          </p>
-          <p>
-            Nuestra meta es promover un sistema que evite la sobresaturación, apoye la estabilidad de precios y proteja tanto los <strong>medios de vida como los ecosistemas costeros</strong>.
-          </p>
-          <p>
-            No estamos aquí para competir por volumen, estamos aquí para crecer con <strong>propósito, dignidad e impacto</strong>.
-          </p>
-      </div>
+    <section id="about-3" class="section" style="background-color: #fbfbfc; padding: 80px 0;">
+      <div class="container-fluid px-0">
+        <div class="row justify-content-center mx-0">
+          <div class="col-8">
+            <article class="bg-white p-5 shadow-sm rounded-3">
+              <p class="about-text">
+                  Construir un futuro más sostenible para la camaronicultura requiere mucho más que 
+                  innovación. Requiere alianzas, un propósito compartido y el compromiso de generar valor 
+                  tanto para las personas como para la naturaleza.
+              </p>
+              <p class="about-text">
+                EXPARDEC es una empresa social impulsada por una misión y con sede en el sur del Ecuador. 
+                Nuestro nombre representa <strong>Expanding Partnerships for Dignity, Ecological Balance, 
+                  and Circular Economy</strong> (Expandiendo alianzas por la dignidad, el equilibrio 
+                  ecológico y la economía circular), reflejando nuestra convicción de que los cambios 
+                  duraderos se construyen conectando personas, conocimiento, innovación y oportunidades a 
+                  lo largo de toda la cadena de valor del camarón.
+              </p>
+              <p class="about-text">
+                Buscamos transformar la acuicultura de camarón en una actividad más justa, ecológica y 
+                centrada en las personas.
+              </p>
+              <p class="about-text">
+                Aspiramos a construir un modelo que <strong>empodere a los productores artesanales, 
+                  proteja los ecosistemas de manglar</strong>, y <strong>promueva una economía 
+                    azul más justa y resiliente</strong>.
+              </p>
+              <p class="about-text">
+                En EXPARDEC creemos que el futuro de la acuicultura no consiste en producir más, 
+                sino en producir mejor. A través del <strong>comercio justo, la agregación de valor</strong>
+                 , y <strong>fortalecimiento de capacidades</strong>, buscamos posicionar la acuicultura 
+                 artesanal como una <strong>alternativa premium y sostenible</strong>.
+              </p>
+              <p class="about-text">
+                Creemos que la verdadera sostenibilidad solo puede alcanzarse cuando <strong>
+                  la conservación ambiental, el bienestar social y la viabilidad económica avanzan de 
+                  manera equilibrada</strong>. El progreso en una, o incluso dos, de estas dimensiones 
+                  nunca debería lograrse a costa de las demás.
+              </p>
+              <p class="about-text">
+                Nuestro objetivo es contribuir a un sector camaronero donde el crecimiento esté impulsado 
+                por <strong>la calidad, la sostenibilidad, la innovación y la colaboración</strong>, generando valor 
+                a largo plazo para productores, trabajadores, empresas, comunidades costeras y los ecosistemas de los 
+                que dependen. 
+              </p>
+              <p class="about-text">
+                No estamos aquí para competir por volumen, estamos aquí para crecer con <strong>propósito, 
+                  dignidad e impacto</strong>.
+              </p>
+              <br><br>
+              <p class="about-text">
+                <em>"Los valores que inspiran nuestro trabajo fueron forjados mucho antes de que 
+                  EXPARDEC existiera."</em>
+              </p>
+              <p class="about-text">
+                <em>
+                  "El hombre, por más justo que quiera ser; tiende a claudicar sus principios frente a un 
+                  mundo equivocado. Pero es nuestro deber mantenernos firmes en nuestras convicciones. 
+                  Porque a los hombres superiores se los valoriza en las adversidades de la vida."
+                </em>
+              </p>
+              <p class="about-text">
+                <strong>— Plutarco L. Pardo G. (1966–2002)</strong>
+              </p>
+            </article>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -108,6 +165,7 @@
             <h4>Enlaces útiles</h4>
             <ul>
               <li><a href="{% url 'index_es' %}" class="active">Inicio</a></li>
+              <li><a href="{% url 'partnerships_es' %}">Alianzas</a></li>
               <li><a href="{% url 'contact_es' %}">Contacto</a></li>
             </ul>
           </div>
